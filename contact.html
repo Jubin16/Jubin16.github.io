@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact US</title>
+
+    <link rel = "stylesheet" href = "./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel = "stylesheet" href = "content/app.css">
+
+</head>
+<body>
+<header>
+</header>
+<div class = "container">
+    <h1>Contact US</h1>
+
+    <div id="messageArea"></div>
+
+    <div class = "row justify-content-lg-center">
+
+        <form  class = "col-lg-6 col-md-4 col-sm-4">
+            <div class="input-group mb-3">
+                <span class="input-group-text"> Full Name</span>
+                <input type="text" id="fullName" name="fullName"
+                       class="form-control"  aria-describedby="Full Name" aria-label="Full Name Input" required>
+
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text"> Contact Number</span>
+                <input type="text" id="contactNumber" name="contactNumber"
+                       class="form-control"  aria-describedby="Contact Number" aria-label="Contact Number Input" required>
+
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text"> Email Address</span>
+                <input type="email" id="emailAddress" name="emailAddress"
+                       class="form-control"  aria-describedby="Email Address" aria-label="Email Address Input" required>
+
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text"> Your Message </span>
+                <input type="text" id="message" name="message"
+                       class="form-control"  aria-describedby="Your Message" aria-label="Your Message Input" required>
+
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="subscribeCheckBox">
+                <label class="form-check-label" for="subscribeCheckBox">Subscribe to our Contact List</label>
+            </div>
+
+            <button id="submitButton" type="submit" class="btn btn-primary"><i class="fa-solid fa-envelope"></i>Submit</button>
+            <button id = "cancelButton" type="reset" class="btn btn-warning"><i class="fa-solid fa-rotate"></i>Cancel</button>
+
+        </form>
+
+        <div class="col-lg-4 col-md-4">
+            <a href ="contact_list.html" class="btn btn-primary"><i class="fa-solid fa-user"></i>Show Contact List</a>
+        </div>
+
+    </div>
+
+
+</div>
+
+<!--<Scripting Section>-->
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="scripts/namespace.js"></script>
+<script src="scripts/contact.js"></script>
+<script src="scripts/app.js"></script>
+
+</body>
+</html>
